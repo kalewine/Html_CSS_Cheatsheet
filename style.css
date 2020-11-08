@@ -1,0 +1,44 @@
+*{
+  
+}
+body {
+    background-color: #F7F9F9; 
+}
+
+header {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #2081C3;
+}
+td {
+    background-color: #BED8D4;
+}
+
+th{
+    font-weight: bold;
+}
+
+table {
+    margin: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    border: #2081C3 solid 2px; 
+    text-align: middle;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #78D5D7;
+}
+
+.main {
+    font-size: 1.25rem;
+    color: #2081C3;
+    
+}
+
+td, th {
+    padding: 5px;
+    border: #2081C3 2px solid;
+
+}

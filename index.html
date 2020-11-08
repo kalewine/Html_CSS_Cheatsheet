@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Development 101</title>
+        <link href="style.css" type="text/css" rel="stylesheet">
+    </head>
+    <main>
+        <!--Header section-->
+        <header>
+            <h1>Web Development 101:</h1>
+            <h2>CSS Selectors</h2>
+        </header>
+        <!--Main section-->
+        <body>
+            <table class="selectors">
+                <thead>
+                    <tr>
+                        <th colspan="5" class="main">CSS Simple Selectors</th>
+                    </tr>
+                </thead>
+                    <tr colspan="5"> 
+                        <td colspan="5">Definition: used to find or select the HTML elements in order to style them with CSS; ranking system, selector specificiy, is used when there are multiple conflicting property values that point to the same element; the highest specificity wins</td> 
+                    </tr>
+                <thead>
+                    <tr>    
+                        <th class="first">Selector Type</th>
+                        <th>Description</th>
+                        <th>Selector Syntax</th>
+                        <th>Selector Specificity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CSS Type Selectors</td>
+                        <td>used to match all elements of a given type or tag name</td>
+                        <td>the element type is used without angle brackets</td>
+                        <td>least specific</td>
+                    </tr>
+                    <tr>
+                        <td>CSS Class Selectors</td>
+                        <td>used to match elements based on the contents of their class attribute</td>
+                        <td>a period prepends the class attribute designation, e.g. for a class of "animal," the selector would read .animal</td> 
+                        <td>more specific</td>
+                    </tr>
+                    <tr>
+                        <td>CSS ID Selector</td>
+                        <td>used to match elements based on the contents of their id attribute; id attribute values should be unique in the DOM</td>
+                        <td>a hashtag prepends the ID attribute designation, e.g. for an ID of "chihuahua," the selector would read #chihuahua</td>
+                        <td>very specific</td>
+                    </tr>
+                    <tr>
+                        <td>!Important Rule</td>
+                        <td>used on declarations to orverride any other declarations for a property and ignore selector specificity</td>
+                        <td>!Important is used</td>
+                        <td>most specific</td>
+                    </tr>
+                    <tr>
+                        <td>Universal Selector</td>
+                        <td>used to select all HTML elements on the page</td>
+                        <td>an asterisk if used as the universal selector, *</td>
+                        <td></td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <table class="combinators">
+                <thead>
+                    <tr>
+                        <th colspan="5" class="main">CSS Combinators</th>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Definition: a CSS selector can contain more than one simple selector; a combinator can be used between the simple selectors</td>
+                    </tr>
+                    <tr>
+                        <th class="first">Combinator Name</th>
+                        <th>Descrition</th>
+                        <th>Selectors</th>
+                        <th>Example</th>
+                        <th>Explanation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Descendent Selector</td>
+                        <td>matches all elements that are descendants of a specified element</td>
+                        <td>element element</td>
+                        <td>div p</td>
+                        <td>selects all the p elements within the div sections are selected</td>
+                    </tr>
+                    <tr>
+                        <td>Child Selector</td>
+                        <td>selects all elements that are the children of a specified element</td>
+                        <td>element > element</td>
+                        <td>div > p</td>
+                        <td>selects all the p elements where the parent is a div element</td>
+                    </tr>
+                    <tr>
+                        <td>Adajcent Sibling Selector</td>
+                        <td>selects all elements that are the adjacent siblings of a specified element; must have the same parent element</td>
+                        <td>element + element</td>
+                        <td>div + p</td>
+                        <td>Selects all p elements that are placed immediately after div elements</td>
+                    </tr>
+                    <tr>
+                        <td>General Sibling Selector</td>
+                        <td>selects all elements that are siblings of a specified element</td>
+                        <td>element1~element2</td>
+                        <td>p ~ ul</td>
+                        <td>Selects every ul element that are preceded by a p element</td>
+                    </tr>
+                    <tr>
+                        <td>Group of CSS Selectors</td>
+                        <td>selects multiple elements and applies the same CSS rule</td>
+                        <td>element1,element2</td>
+                        <td>h1, h2</td>
+                        <td>Selects h1 and h2 elements</td>
+                    </tr>
+                </tbody>
+            </table>
+        </body>
+    </main>
+</html>
+
